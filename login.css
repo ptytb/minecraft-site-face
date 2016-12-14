@@ -4,6 +4,11 @@
     src: url(fonts/Minecrafter.Reg.ttf);
 }
 
+@font-face {
+    font-family: MinecrafterAlt;
+    src: url(fonts/Minecrafter.Alt.ttf);
+}
+
 body {
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
   padding: 50px 0;
@@ -22,12 +27,17 @@ header, footer {
 }
 
 header {
-  font-family: Minecrafter;
+  font-family: MinecrafterAlt;
   font-size: 30px;
 }
 
 footer {
   margin-top: 20px;
+}
+
+footer .info-panel {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
 }
 
 .container {
@@ -102,7 +112,7 @@ footer {
   border-radius: 5px;
 }
 
-.login button {
+.login li button {
   margin-left: auto;
   padding: 8px 16px;
   border: none;
@@ -154,4 +164,29 @@ footer {
   caption-side: bottom;
   position: relative;
   margin-top: -0.15em;
+}
+
+.skin-panel {
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skin-panel__buttons {
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.skin-panel img {
+  flex: 0 1 150px;
+}
+
+.skin-panel__buttons button {
+  flex: none;
+  margin: 0;
+  /*margin: auto;*/
 }

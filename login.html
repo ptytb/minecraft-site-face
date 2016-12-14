@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="login.css">
+  <script src="upload.js" charset="utf-8" async></script>
 </head>
 <body>
   <header>Welcome to the number one Minecraft community!</header>
@@ -43,7 +44,7 @@
 
         <li>
           <label for="login__password">E-mail</label>
-          <input type="text" name="login__password" value="" placeholder="">
+          <input type="email" name="login__password" value="" placeholder="">
         </li>
 
         <li>
@@ -74,6 +75,16 @@
           <button type="submit">Reset password</button>
         </li>
 
+        <li>
+          <div class="skin-panel">
+            <img src="images/skins.png" alt="">
+            <div class="skin-panel__buttons">
+              <button type="button" name="button" id="upload">Upload skin</button>
+              <button type="button" name="button">Remove skin</button>
+              <input style="position:fixed;top:-100px;" id="image-file" type="file" />
+            </div>
+          </div>
+        </li>
 
       </ul>
 
@@ -81,6 +92,10 @@
 
   </div>
 
-  <footer></footer>
+  <footer>
+    <div class="info-panel">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </footer>
 </body>
 </html>
