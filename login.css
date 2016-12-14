@@ -1,0 +1,132 @@
+
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  padding: 50px 0;
+  background: #3AAFAB;
+  color: #fff;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/9d/bd/46/9dbd46abbcc932c413d661451942c369.jpg);
+}
+
+/*header {
+  position: absolute;
+  left: 50%;
+  background-color: inherit;
+}*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: inherit;
+  border-radius: 20px;
+}
+
+@media all and (min-width: 1000px) {
+  .container {
+    max-width: 65%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    max-width: 45%;
+  }
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.login {
+  flex: auto;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.login li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.login li label {
+  flex: 1 0 140px;
+  max-width: 220px;
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.login li label + * {
+  flex: 1 0 220px;
+}
+
+.login li button {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.login li input {
+  padding: 15px;
+  border: none;
+  font: inherit;
+  border-radius: 5px;
+}
+
+.login button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 4px;
+}
+
+.login button:hover {
+  color: #333;
+  background: #f2f2f2;
+  transition-duration: 0.4s;
+}
+
+.login button:active {
+  color: #AAA;
+  background: #364;
+  transition-duration: 0.4s;
+}
+
+.login li a {
+  padding: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  margin-left: auto;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  display: inline-table;
+
+  content: "";
+  border-bottom: 0.11em dashed #364;
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top: -0.15em;
+}
+
+.login li a:hover {
+  background: #333;
+  transition-duration: 0.4s;
+  transition-property: background;
+
+  content: "";
+  border-bottom: 0.11em dashed;
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top: -0.15em;
+}
